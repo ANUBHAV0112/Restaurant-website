@@ -1,50 +1,74 @@
-# Food house restaurant Management System
+# Food House Restaurant Management System
 
-Here is a real life application build with django, bootstrap-4
-
-This application will manage Restaurant name <b>Food House </b> things automatically.
-
-## Features
-```
-1. Home ;_
-2.Menu :-You can view the menu of my restaurant  
-3.Book a Table:- You can book Table from my restaurant  
-4.Contact :-If you have any query and feedback you cant contact to restaurant owner 
-5.Gallery :-You can view the images of my restaurant
-6.Restriction to other people :-If you dont sign in you wont able to contact me 
-7.Social account Login-You can login using google and facebook
-8.And a lot..  
-```
-
-I need to have an application like this. And finally i make it. It's live now. You can test also.
-
-Cheers!
-
-## Tools:
-```
-1.Django
-2.Bootstrap-4
-3.Django-The message Framework
-4.django-social-auth.
-```
-### First page  .
-![Screenshot](screenshot/1.png)
- 
- 
-### You can Book a table here.
-![Screenshot](screenshot/Bookatable.png)  
-  
- 
-
-
-
-## If you found this usefull don't forget to hit a star :) 
+A real-life restaurant management web application built with Django and Bootstrap 4.  
+This project automates and streamlines the management of a restaurant called **Food House**.
 
 ---
 
-👨‍💻 Author :
-Anubhav Choudhary
+## 🚀 Features
 
+- **Home Page:** Welcome and introduction to the restaurant.
+- **Menu:** Browse the restaurant’s menu.
+- **Book a Table:** Reserve a table online.
+- **Contact:** Send queries or feedback directly to the owner.
+- **Gallery:** View images of the restaurant.
+- **User Authentication:** Only signed-in users can contact the owner.
+- **Social Login:** Sign in with Google or Facebook.
+- **Message Framework:** User-friendly notifications and alerts.
+- **And much more!**
+
+---
+
+## 🛠️ Built With
+
+- Django
+- Bootstrap 4
+- Django Message Framework
+- django-social-auth
+
+---
+
+## 📸 Screenshots
+
+**Home Page**  
+![Screenshot](screenshot/home%20page.png)
+
+**Book a Table**  
+![Screenshot](screenshot/booking%20table.png)
+
+**Menu**  
+![Screenshot](screenshot/Menu.png)
+
+**Veg Menu**  
+![Screenshot](screenshot/veg%20memu.png)
+
+**Footer**  
+![Screenshot](screenshot/Front%20bottom.png)
+
+**Booking Table Output**  
+![Screenshot](screenshot/booking%20table%20output.png)
+
+**Contact Output**  
+![Screenshot](screenshot/contact%20output.png)
+
+**Login**  
+![Screenshot](screenshot/login%20page.png)
+
+**Signup**  
+![Screenshot](screenshot/signup page.png)
+
+**Login & Signup Output**  
+![Screenshot](screenshot/login&signin%20output.png)
+
+---
+
+🌟 If you found this useful, don’t forget to star the repo!
+
+---
+
+## 👨‍💻 Author
+
+**Anubhav Choudhary**  
 [LinkedIn](https://www.linkedin.com/in/anubhav-choudhary-35b8ab254/) | [GitHub](https://github.com/ANUBHAV0112)
 
 ---
