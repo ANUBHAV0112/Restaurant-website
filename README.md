@@ -19,12 +19,49 @@ This project automates and streamlines the management of a restaurant called **F
 
 ---
 
+## 🌐 Live Demo
+
+<!-- Uncomment and add your link if available -->
+<!-- [Visit the live site here!](https://127.0.0.1) -->
+
+---
+
 ## 🛠️ Built With
 
 - Django
 - Bootstrap 4
 - Django Message Framework
 - django-social-auth
+
+---
+
+## 🛠️ Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/ANUBHAV0112/Restaurant-website.git
+   cd Restaurant-website
+   ```
+2. Create and activate a virtual environment:
+   ```
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Apply migrations:
+   ```
+   python manage.py migrate
+   ```
+5. Run the development server:
+   ```
+   python manage.py runserver
+   ```
 
 ---
 
@@ -60,14 +97,20 @@ This project automates and streamlines the management of a restaurant called **F
 **Login & Signup Output**  
 ![Screenshot](screenshot/login&signin%20output.png)
 
----
-
 **Gallery**  
 ![Screenshot](screenshot/gallery.png)
 
 ---
 
-🌟 If you found this useful, don’t forget to star the repo!
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
