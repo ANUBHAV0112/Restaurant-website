@@ -39,3 +39,12 @@ Cheers!
 
 
 ## If you found this usefull don't forget to hit a star :) 
+
+---
+
+👨‍💻 Author :
+Anubhav Choudhary
+
+[LinkedIn](https://www.linkedin.com/in/anubhav-choudhary-35b8ab254/) | [GitHub](https://github.com/ANUBHAV0112)
+
+---
