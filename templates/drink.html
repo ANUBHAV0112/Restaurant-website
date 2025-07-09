@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                   <p>Welcome to Our Drinks Menu</p>
+                   <h4>Drinks Menu</h4>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            
+           
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/chocolatemilkshake.jpeg' %}" alt="Milkshake">
+                    <div class="menu_content">
+                        <h4>Chocolate Milkshake<span>Rs.110</span></h4>
+                        <p>Creamy and Chocolate milkshakes available in classic and seasonal flavors.</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/cookies&milkshake.jpeg' %}" alt="Cookies & Milkshake">
+                    <div class="menu_content">
+                        <h4>Cookies & Milkshake<span>Rs.210</span></h4>
+                        <p>Rich milkshake blended with crunchy cookies for a sweet treat.</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/coldcoffee.webp' %}" alt="Cold Coffee">
+                    <div class="menu_content">
+                        <h4>Cold Coffee <span>Rs.150</span></h4>
+                        <p>Smooth and chilled cold coffee, perfect for a caffeine kick on a warm day.</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/milkshake.jpeg' %}" alt="Milkshake">
+                    <div class="menu_content">
+                        <h4>Milkshake<span>Rs.80</span></h4>
+                        <p>Creamy and chilled milkshakes available in classic and seasonal flavors.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/softdrink.webp' %}" alt="Soft Drink">
+                    <div class="menu_content">
+                        <h4>Soft Drink<span>RS.20 to Rs.80</span></h4>
+                        <p>Chilled carbonated soft drinks to refresh and energize.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Tea.webp' %}" alt="Tea">
+                    <div class="menu_content">
+                        <h4>Tea<span>Rs.410</span></h4>
+                        <p>Freshly brewed tea with aromatic spices for a comforting sip.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Lassi.jpeg' %}" alt="Lassi">
+                    <div class="menu_content">
+                        <h4>Lassi<span>Rs.100</span></h4>
+                        <p>Chilled, fizzy soft drinks to refresh and complement your meal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mojito -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Mojito.jpeg' %}" alt="Mojito">
+                    <div class="menu_content">
+                        <h4>Mojito <span>Rs.150</span></h4>
+                        <p>A fruity twist on the classic mojito with mint, lime, and refreshing fizz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Classic Mojito -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Classic Mojito.jpeg' %}" alt="Classic Mojito">
+                    <div class="menu_content">
+                        <h4>Classic Mojito <span>Rs.200</span></h4>
+                        <p>A cool, crisp blend of mint, lime, and soda for ultimate refreshment.</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

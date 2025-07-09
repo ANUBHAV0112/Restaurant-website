@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Join Our Family</h1>
+                <p>Create your account to get started</p>
+            </div>
+            
+            <form class="signup-form" id="signupForm">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter for special offers</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Create Account</button>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="login.html">Sign in here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('signupPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            if (!terms) {
+                alert('Please accept the terms of service');
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long');
+                return;
+            }
+            
+            alert('Account created successfully! (This is a demo)');
+        });
+    </script>
+</body>
+</html>

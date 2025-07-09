@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Explore our exquisite selection of seafood dishes, crafted with the freshest ingredients and traditional spices.</p>
+                    <h4>Seafood Menu</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seafood Items Grid -->
+        <div class="row menu_style1">
+        
+            <!-- Goan Fish Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Goan Fish Curry.jpeg' %}" alt="Goan Fish Curry">
+                    <div class="menu_content">
+                        <h4>Goan Fish Curry <span>Rs.299</span></h4>
+                        <p>A tangy coconut-based curry with fresh fish and coastal spices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tandoori Pomfret -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Tandoori Pomfret.jpeg' %}" alt="Tandoori Pomfret">
+                    <div class="menu_content">
+                        <h4>Tandoori Pomfret <span>Rs.349</span></h4>
+                        <p>Whole pomfret marinated in tandoori spices and grilled to perfection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prawn Masala Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Prawn Masala.jpeg' %}" alt="Prawn Masala">
+                    <div class="menu_content">
+                        <h4>Prawn Masala <span>Rs.319</span></h4>
+                        <p>Juicy prawns simmered in spicy onion-tomato gravy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish Fry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Fish Fry.jpeg' %}" alt="Fish Fry">
+                    <div class="menu_content">
+                        <h4>Fish Fry <span>Rs.289</span></h4>
+                        <p>Crispy shallow-fried fish fillet coated in semolina and spices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Malabar Prawn Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Malabar Prawn Curry.jpeg' %}" alt="Malabar Prawn Curry">
+                    <div class="menu_content">
+                        <h4>Malabar Prawn Curry <span>Rs.329</span></h4>
+                        <p>Prawns in a coconut milk gravy with curry leaves and mustard seeds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crab Masala -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Crab Masala.jpeg' %}" alt="Crab Masala">
+                    <div class="menu_content">
+                        <h4>Crab Masala <span>Rs.359</span></h4>
+                        <p>Fresh crab cooked in rich, spicy Indian-style masala.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish Biryani -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Fish Biryani.jpeg' %}" alt="Fish Biryani">
+                    <div class="menu_content">
+                        <h4>Fish Biryani <span>Rs.299</span></h4>
+                        <p>Fragrant basmati rice layered with marinated fish and saffron.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garlic Butter Prawns -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Garlic Butter Prawns.jpeg' %}" alt="Garlic Butter Prawns">
+                    <div class="menu_content">
+                        <h4>Garlic Butter Prawns <span>Rs.349</span></h4>
+                        <p>Succulent prawns tossed in garlic, herbs, and melted butter.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chettinad Fish Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Chettinad Fish Curry.jpeg' %}" alt="Chettinad Fish Curry">
+                    <div class="menu_content">
+                        <h4>Chettinad Fish Curry <span>Rs.309</span></h4>
+                        <p>Spicy South Indian-style fish curry with bold Chettinad masalas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End row -->
+    </div>
+</section>
+
+{% endblock body %}

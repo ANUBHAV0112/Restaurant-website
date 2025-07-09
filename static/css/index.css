@@ -1,0 +1,331 @@
+/* ====== Reset & Base Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  /* background: #ddd; */
+}
+
+/* ====== About Section ====== */
+.about-section {
+  width: 100%;
+  background: #f1f1f1;
+  padding: 40px 0;
+}
+
+.inner-width {
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.about-section h1 {
+  text-align: center;
+}
+
+.border {
+  width: 100px;
+  height: 3px;
+  background: #e74c3c;
+  margin: 40px auto;
+}
+
+.about-section-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-section-col {
+  flex: 50%;
+}
+
+.about {
+  padding-right: 30px;
+}
+
+.about p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about a {
+  display: inline-block;
+  color: #e74c3c;
+  text-decoration: none;
+  border: 2px solid #e74c3c;
+  border-radius: 24px;
+  padding: 8px 40px;
+  transition: 0.4s linear;
+}
+
+.about a:hover {
+  color: #fff;
+  background: #e74c3c;
+}
+
+/* ====== Skills Section ====== */
+.skills {
+  padding-left: 30px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+/* ====== Card Area ====== */
+.card-area {
+  width: 400px;
+  margin: 2% auto;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.9);
+}
+
+.img-area {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.img-area img {
+  width: 100%;
+  height: auto;
+}
+
+.img-text {
+  background: #262626;
+  margin-top: -25%;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.img-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.img-text h4 {
+  color: #0094ff;
+  margin: 10px 0;
+}
+
+.card-area:hover img {
+  transform: scale(1.1);
+  transition: 0.9s;
+}
+
+/* ====== Buttons ====== */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #0094ff;
+  width: 150px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+
+.label {
+  display: block;
+  height: 100%;
+  position: relative;
+  top: 0;
+  transition: top 0.35s;
+  width: 100%;
+}
+
+.button:hover .label {
+  top: -100%;
+}
+
+/* ====== Footer Section ====== */
+footer {
+  background: #f1f1f1;
+  padding: 90px 0;
+}
+
+.footer-container0 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f5eeee;
+  padding: 30px 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-col,
+.right-col {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.social-media a:hover {
+  color: #fc5c65;
+}
+
+.right-col h1 {
+  font-size: 26px;
+}
+
+/* ====== Author Info Section ====== */
+.author-info {
+  margin-top: 20px;
+}
+
+.author-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.author-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.author-info a {
+  color: #0077b5;
+  text-decoration: none;
+  margin-right: 100px;
+  font-weight: bold;
+}
+
+.author-info a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Newsletter Form ====== */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb {
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn0 {
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #f1f1f1;
+  background: #fc5c65;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+
+.btn0:hover {
+  opacity: 0.7;
+}
+
+/* ====== Responsive Footer ====== */
+@media screen and (max-width: 960px) {
+  .footer-container0 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-col,
+  .left-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn0 {
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* ====== Page Content Centering ====== */
+.page-content {
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== Video/Code Frame Embeds ====== */
+.iframe-container,
+.code-frame {
+  position: relative;
+  width: 50%;
+  padding-bottom: 46.25%;
+  height: 0;
+}
+
+.iframe-container iframe,
+.code-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ====== Custom Scrollbar ====== */
+::-webkit-scrollbar {
+  background: #ddd;
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px #00000070;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(125deg, #3498db, #34495e);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(125deg, #34495e, #3498db);
+}

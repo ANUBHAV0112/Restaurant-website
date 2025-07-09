@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Most Famous Dish</p>
+                    <h4> Menu</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            
+            <!-- North Indian Plate -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/northindian.jpg' %}" alt="North Indian Plate">
+                    <div class="menu_content">
+                        <h4>North Indian Plate <span>Rs.100</span></h4>
+                        <p>A wholesome platter of North India's classic curries, rice, naan, and sides.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pizza -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/pizza1.jpeg' %}" alt="Pizza">
+                    <div class="menu_content">
+                        <h4>Pizza <span>Rs.110</span></h4>
+                        <p>Freshly baked with a crispy crust, gooey cheese, and your choice of classic toppings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- South Indian -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/southindian.jpg' %}" alt="South Indian">
+                    <div class="menu_content">
+                        <h4>South Indian <span>Rs.100</span></h4>
+                        <p>A flavorful spread of dosas, idlis, chutneys, sambar, and other delights.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sandwich -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/sandwich.jpeg' %}" alt="Sandwich">
+                    <div class="menu_content">
+                        <h4>Sandwich <span>Rs.50</span></h4>
+                        <p>Grilled to perfection with fresh veggies, cheese, and delicious fillings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Momos -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/momos.jpeg' %}" alt="Momos">
+                    <div class="menu_content">
+                        <h4>Momos <span>Rs.80</span></h4>
+                        <p>Soft dumplings stuffed with flavorful fillings, served with spicy chutney.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chicken -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/chicken.jpeg' %}" alt="Chicken">
+                    <div class="menu_content">
+                        <h4>Chicken <span>Rs.410</span></h4>
+                        <p>Tender, juicy pieces cooked with rich spices for a hearty, flavorful bite.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cold Drinks -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/colddrinks.jpeg' %}" alt="Cold Drinks">
+                    <div class="menu_content">
+                        <h4>Cold Drinks <span>Rs.100</span></h4>
+                        <p>Chilled, fizzy soft drinks to refresh and complement your meal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mojito -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Mojito.jpeg' %}" alt="Mojito">
+                    <div class="menu_content">
+                        <h4>Mojito <span>Rs.150</span></h4>
+                        <p>A fruity twist on the classic mojito with mint, lime, and refreshing fizz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Classic Mojito -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Classic Mojito.jpeg' %}" alt="Classic Mojito">
+                    <div class="menu_content">
+                        <h4>Classic Mojito <span>Rs.200</span></h4>
+                        <p>A cool, crisp blend of mint, lime, and soda for ultimate refreshment.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Load More Button -->
+        <div class="row pb-60">
+            <div class="col-xl-12 text-center">
+                <div class="box_btn">
+                    <a href="#">Load More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+{% endblock body %}

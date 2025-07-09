@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<link rel="stylesheet" href="{% static 'css/aos.css' %}">
+<!-- Remove duplicate AOS links, only one needed -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<div class="contact-header" data-aos="fade-down">
+  <h1>Contact Us</h1>
+  <p>We would love to hear from you!</p>
+</div>
+
+<div class="contact-info" data-aos="fade-up">
+  <div class="info-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <p>123 Food Street, Mumbai</p>
+  </div>
+  <div class="info-item">
+    <i class="fas fa-phone"></i>
+    <p><a href="tel:9222991101">9222991101</a></p>
+  </div>
+  <div class="info-item">
+    <i class="fas fa-envelope"></i>
+    <p><a href="mailto:restaurant.com">restaurant.com</a></p>
+  </div>
+</div>
+
+<section class="contact-section" data-aos="fade-up">
+  <h1 class="form-title">Contact Us</h1>
+  <div class="form-container">
+    <form method="POST" action="/contact" class="contact-form">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject">
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <input type="text" name="date" placeholder="Date" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ✅ AOS Init JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+{% endblock %}

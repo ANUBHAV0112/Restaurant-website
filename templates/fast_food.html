@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Welcome to Our Fast-Food Menu</p>
+                    <h4> Fast-Food Menu</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            
+            <!-- Veg Burger -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Veg Burger.jpeg' %}" alt="Veg Burger">
+                    <div class="menu_content">
+                        <h4>Veg Burger<span>Rs.60</span></h4>
+                        <p>A crispy patty layered with fresh veggies and sauces in a toasted bun.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cheese Sandwich -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Cheese Sandwich.jpeg' %}" alt="Cheese Sandwich">
+                    <div class="menu_content">
+                        <h4>Cheese Sandwich<span>Rs.70</span></h4>
+                        <p>Grilled sandwich stuffed with melted cheese and veggies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- French Fries -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/French Fries.jpeg' %}" alt="French Fries">
+                    <div class="menu_content">
+                        <h4>French Fries<span>Rs.40</span></h4>
+                        <p>Golden, crispy potato fries served with ketchup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sandwich -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/sandwich.jpeg' %}" alt="Sandwich">
+                    <div class="menu_content">
+                        <h4>Sandwich <span>Rs.50</span></h4>
+                        <p>Grilled to perfection with fresh veggies, cheese, and delicious fillings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Momos -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/momos.jpeg' %}" alt="Momos">
+                    <div class="menu_content">
+                        <h4>Momos <span>Rs.80</span></h4>
+                        <p>Soft dumplings stuffed with flavorful fillings, served with spicy chutney.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Maggi Masala -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/chicken.jpeg' %}" alt="Maggi Masala">
+                    <div class="menu_content">
+                        <h4>Maggi Masala<span>Rs.20</span></h4>
+                        <p>Classic Indian-style Maggi noodles with added spices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Spring Rolls -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Spring Rolls.jpeg' %}" alt="Spring Rolls">
+                    <div class="menu_content">
+                        <h4>Spring Rolls<span>Rs.100</span></h4>
+                        <p>Crispy rolls filled with spicy mixed vegetables.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pizza -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/pizza1.jpeg' %}" alt="Pizza">
+                    <div class="menu_content">
+                        <h4>Pizza<span>Rs.100 to Rs.450</span></h4>
+                        <p>Cheesy slice loaded with toppings and herbs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paneer Wrap -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Paneer Wrap.jpeg' %}" alt="Paneer Wrap">
+                    <div class="menu_content">
+                        <h4>Paneer Wrap<span>Rs.100</span></h4>
+                        <p>Soft wrap stuffed with grilled paneer, veggies, and sauces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

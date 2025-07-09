@@ -1,0 +1,35 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django database
+db.sqlite3
+
+# Environment files
+.env
+*.env
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Migrations (optional)
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Compiled static files
+staticfiles/
+static_root/

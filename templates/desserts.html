@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Welcome to Our Desserts Menu</p>
+                    <h4>Desserts Menu</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            <!-- Gulab Jamun -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Gulab Jamun.jpeg' %}" alt="Gulab Jamun">
+                    <div class="menu_content">
+                        <h4>Gulab Jamun<span>Rs.60</span></h4>
+                        <p>Soft, deep-fried milk balls soaked in fragrant sugar syrup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rasgulla -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Rasgulla.jpeg' %}" alt="Rasgulla">
+                    <div class="menu_content">
+                        <h4>Rasgulla<span>Rs.40</span></h4>
+                        <p>Spongy cottage cheese balls dipped in light sugar syrup.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kheer -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Kheer.jpeg' %}" alt="Kheer">
+                    <div class="menu_content">
+                        <h4>Kheer<span>Rs.100</span></h4>
+                        <p>Creamy rice pudding slow-cooked with milk, sugar, and dry fruits.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rasmalai -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Rasmalai.jpeg' %}" alt="Rasmalai">
+                    <div class="menu_content">
+                        <h4>Rasmalai<span>Rs.100</span></h4>
+                        <p>Soft paneer discs soaked in saffron-infused sweetened milk.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chocolate Brownie -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Chocolate Brownie.jpeg' %}" alt="Chocolate Brownie">
+                    <div class="menu_content">
+                        <h4>Chocolate Brownie<span>Rs.120</span></h4>
+                        <p>Rich and fudgy chocolate dessert, served warm or with ice cream.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cheesecake -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Cheesecake.jpeg' %}" alt="Cheesecake">
+                    <div class="menu_content">
+                        <h4>Cheesecake<span>Rs.70</span></h4>
+                        <p>Silky smooth dessert on a buttery crust, topped with fruits or sauce.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ice Cream -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Ice Cream.jpeg' %}" alt="Ice Cream">
+                    <div class="menu_content">
+                        <h4>Ice Cream<span>Rs.80</span></h4>
+                        <p>A variety of creamy and frozen flavors to chill your taste buds.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gajar Halwa -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Gajar Halwa.jpeg' %}" alt="Gajar Halwa">
+                    <div class="menu_content">
+                        <h4>Gajar Halwa<span>Rs.100</span></h4>
+                        <p>Carrot-based Indian sweet dish cooked with milk, ghee, and nuts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fruit Custard -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Fruit Custard.jpeg' %}" alt="Fruit Custard">
+                    <div class="menu_content">
+                        <h4>Fruit Custard<span>Rs.150</span></h4>
+                        <p>Mixed fruits blended in chilled, creamy vanilla custard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

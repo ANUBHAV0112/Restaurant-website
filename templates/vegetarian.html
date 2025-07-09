@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Welcome to Our Vegetarian Menu</p>
+                    <h4>Vegetarian Menu</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            
+            <!-- North Indian Plate -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/northindian.jpg' %}" alt="North Indian Plate">
+                    <div class="menu_content">
+                        <h4>North Indian Plate <span>Rs.100</span></h4>
+                        <p>A wholesome platter of North India's classic curries, rice, naan, and sides.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paneer Butter Masala -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Paneer Butter Masala.jpeg' %}" alt="Paneer Butter Masala">
+                    <div class="menu_content">
+                        <h4>Paneer Butter Masala<span>Rs.310</span></h4>
+                        <p>Soft paneer cubes cooked in rich, creamy tomato gravy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- South Indian -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/southindian.jpg' %}" alt="South Indian">
+                    <div class="menu_content">
+                        <h4>South Indian <span>Rs.100</span></h4>
+                        <p>A flavorful spread of dosas, idlis, chutneys, sambar, and other delights.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Malai Kofta -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Malai Kofta.jpeg' %}" alt="Malai Kofta">
+                    <div class="menu_content">
+                        <h4>Malai Kofta<span>Rs.250</span></h4>
+                        <p>Crispy potato-paneer balls simmered in cashew cream gravy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shahi Paneer -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Shahi Paneer.jpeg' %}" alt="Shahi Paneer">
+                    <div class="menu_content">
+                        <h4>Shahi Paneer<span>Rs.350</span></h4>
+                        <p>Royal paneer curry cooked in a creamy white cashew sauce.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dal Makhani -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Dal Makhani.jpeg' %}" alt="Dal Makhani">
+                    <div class="menu_content">
+                        <h4>Dal Makhani<span>Rs.200</span></h4>
+                        <p>Slow-cooked black lentils with cream and butter.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navratan Korma -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Navratan Korma.jpeg' %}" alt="Navratan Korma">
+                    <div class="menu_content">
+                        <h4>Navratan Korma<span>Rs.210</span></h4>
+                        <p>Mughlai-style curry with a mix of 9 veggies, nuts, and cream.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stuffed Capsicum -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Stuffed Capsicum.jpeg' %}" alt="Stuffed Capsicum">
+                    <div class="menu_content">
+                        <h4>Stuffed Capsicum<span>Rs.250</span></h4>
+                        <p> Bell peppers stuffed with spiced mashed potatoes and baked.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Palak Paneer -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Palak Paneer.jpeg' %}" alt="Palak Paneer">
+                    <div class="menu_content">
+                        <h4>Palak Paneer<span>Rs.220</span></h4>
+                        <p>Cottage cheese cubes in a rich spinach-based gravy</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock body %}

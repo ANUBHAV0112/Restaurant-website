@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/menu1.css' %}">
+
+<section class="about-area pt-60">
+    <div class="container">
+        
+        <!-- Section Title -->
+        <div class="row">
+            <div class="col-xl-12 mb-60">
+                <div class="section-title text-center">
+                    <p>Welcome to Our Non-Vegetarian Menu</p>
+                    <h4> Non-Vegetarian Menu</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="row menu_style1">
+            
+            <!-- Butter Chicken -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Butter Chicken.jpeg' %}" alt="Butter Chicken">
+                    <div class="menu_content">
+                        <h4>Butter Chicken<span>Rs.400</span></h4>
+                        <p>Tender chicken in a buttery, creamy tomato gravy.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chicken Biryani -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Chicken Biryani.jpeg' %}" alt="Chicken Biryani">
+                    <div class="menu_content">
+                        <h4>Chicken Biryani<span>Rs.260</span></h4>
+                        <p>Fragrant basmati rice layered with spiced chicken and saffron.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chicken Tikka Masala -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Chicken Tikka Masala.jpeg' %}" alt="Chicken Tikka Masala">
+                    <div class="menu_content">
+                        <h4>Chicken Tikka Masala<span>Rs.270</span></h4>
+                        <p>Grilled chicken tikka cooked in a spicy onion-tomato sauce.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fish Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Fish Curry.jpeg' %}" alt="Fish Curry">
+                    <div class="menu_content">
+                        <h4>Fish Curry<span>Rs.350</span></h4>
+                        <p>Tangy coconut-based fish curry with coastal spices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Prawn Masala -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Prawn Masala.jpeg' %}" alt="Prawn Masala">
+                    <div class="menu_content">
+                        <h4>Prawn Masala<span>Rs.380</span></h4>
+                        <p>Juicy prawns in spicy onion-tomato masala.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chicken -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/chicken.jpeg' %}" alt="Chicken">
+                    <div class="menu_content">
+                        <h4>Chicken <span>Rs.210</span></h4>
+                        <p>Tender, juicy pieces cooked with rich spices for a hearty, flavorful bite.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Egg Curry -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Egg Curry.jpeg' %}" alt="Egg Curry">
+                    <div class="menu_content">
+                        <h4>Egg Curry<span>Rs.100</span></h4>
+                        <p>Chilled, fizzy soft drinks to refresh and complement your meal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chicken Handi -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Chicken handi.jpeg' %}" alt="Chicken Handi">
+                    <div class="menu_content">
+                        <h4>Chicken Handi<span>Rs.350</span></h4>
+                        <p>Desi-style chicken cooked in clay pot with creamy masala.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tandoori Chicken -->
+            <div class="col-md-4">
+                <div class="single_menu_list">
+                    <img src="{% static 'img/Tandoori Chicken.jpeg' %}" alt="Tandoori Chicken">
+                    <div class="menu_content">
+                        <h4>Tandoori Chicken<span>Rs.200</span></h4>
+                        <p>Marinated chicken roasted in tandoor with smoky flavors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
+
+{% endblock body %}

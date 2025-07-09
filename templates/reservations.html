@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/reserve.css' %}">
+{% endblock %}
+
+
+
+<div class="booking-container">
+  <h1 class="text-center mt-5 mb-4">Booking The Table</h1>
+
+  <div class="row">
+    
+    <div class="col-md-6">
+
+  <form>
+    <!-- Name -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Name</span>
+      <input type="text" class="form-control" placeholder="Enter your name">
+    </div>
+
+    <!-- Email -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Email</span>
+      <input type="email" class="form-control" placeholder="Enter your email">
+    </div>
+
+    <!-- Date -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Date</span>
+      <input type="date" class="form-control" id="booking-date">
+    </div>
+
+    <!-- Time -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Time</span>
+      <input type="time" class="form-control" id="booking-time">
+    </div>
+
+    <!-- Number of People -->
+    <div class="input-group input-group-sm mb-3">
+      <label class="input-group-text" for="people-count">People</label>
+      <select class="form-select" id="people-count">
+        <option selected disabled>Choose...</option>
+        {% for i in "1234567" %}
+        <option value="{{ i }}">{{ i }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Message</span>
+      <input type="text" class="form-control" placeholder="Any special request">
+    </div>
+
+    <!-- Table Number -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Table Number</span>
+      <input type="text" class="form-control" id="tableNumber" placeholder="Enter table number">
+    </div>
+
+    <!-- Table Status -->
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text">Status</span>
+      <input type="text" class="form-control" id="status" readonly>
+    </div>
+
+    <!-- Submit (Optional) -->
+    <button type="submit" class="btn btn-primary">Book Table</button>
+  </form>
+</div>
+<div class="details-container">
+
+      
+        <h4 class="mb-3">📞 Contact</h4>
+        <p><strong>Phone:</strong> 1234567890</p>
+
+        <h4 class="mt-4 mb-3">⏰ Opening Hours</h4>
+        <p><strong>Weekdays:</strong> 8:00 AM – 8:00 PM</p>
+        <p><strong>Weekends:</strong> 4:00 PM – 12:00 AM</p>
+      
+    
+  </div>
+
+<script>
+  const bookedTables = [2, 4, 6];
+  const tableInput = document.getElementById("tableNumber");
+  const statusInput = document.getElementById("status");
+
+  tableInput.addEventListener("input", () => {
+    const tableNumber = parseInt(tableInput.value);
+
+    if (isNaN(tableNumber)) {
+      statusInput.value = "Please enter a valid number";
+      statusInput.className = "form-control text-warning";
+      return;
+    }
+
+    if (bookedTables.includes(tableNumber)) {
+      statusInput.value = "Booked";
+      statusInput.className = "form-control status-booked";
+    } else {
+      statusInput.value = "Available";
+      statusInput.className = "form-control status-available";
+    }
+  });
+</script>
+
+{% endblock body %}
