@@ -55,10 +55,15 @@ This project automates and streamlines the management of a restaurant called **F
 ![Screenshot](screenshot/login%20page.png)
 
 **Signup**  
-![Screenshot](screenshot/signup page.png)
+![Screenshot](screenshot/signup%20page.png)
 
 **Login & Signup Output**  
 ![Screenshot](screenshot/login&signin%20output.png)
+
+---
+
+**Gallery**  
+![Screenshot](screenshot/gallery.png)
 
 ---
 
